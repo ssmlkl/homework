@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>密码记录</title>
+    <style>
+        #ys{
+            font-size: x-small;
+        }
+        #on{width:100px;
+            margin:10px auto;
+            height:80px;}
+        #tips{padding:5px;
+            margin-top:5px;
+            background:#cccccc;
+            border:1px solid black;
+            display:none;}
+    </style>
+    <script>
+        window.onload = function (){
+            var adiv = document.getElementById("tips");
+            var bdiv = document.getElementById("kkk");
+            bdiv.onmouseover = function (){
+                adiv.style.display = "block";
+            };
+            bdiv.onmouseout = function (){
+                adiv.style.display = "none";
+            }
+        }
+    </script>
+</head>
+<body>
+<div id="on">
+    <label id="kkk"><input type="checkbox" /><span id="ys">记住自动登陆</span></label>
+    <div id="tips">为了您的信息安全，请不要在网吧或公用电脑上使用此功能！</div>
+</div>
+</body>
+</html>

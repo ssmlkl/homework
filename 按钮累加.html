@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>累加按钮</title>
+    <style>
+        input{font:12px arial;cursor:pointer;padding:0 10px;}
+    </style>
+    <script>
+        window.onload = function (){
+            var aBtn = document.getElementsByTagName("input")[0];//为什么不能用getElementById("input");
+            var i = 0;
+            aBtn.onclick = function (){
+                aBtn.value = ++i;
+            }
+        }
+    </script>
+</head>
+<body>
+ <input type="button" value="0" />
+</body>
+</html>

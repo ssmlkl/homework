@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title></title>
+    <style>
+        div{
+            width: 200px;
+            height: 200px;
+            border:2px solid  yellowgreen;
+            float: left;
+            margin: 10px;
+        }
+    </style>
+    <script>
+        var adiv=document.getElementsByTagName('div');
+        function abc()
+        {
+            for( var i=0;i<4;i++)
+            {
+                adiv[i].style.background='red';
+            }
+        }
+    </script>
+</head>
+<body>
+<input type="button" onclick="abc()"/>
+<div></div>
+<div></div>
+<div></div>
+<div></div>
+</body>
+</html>

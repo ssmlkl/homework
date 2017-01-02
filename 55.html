@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title>sdfas</title>
+    <style>
+        #div1{
+            width: 200px;
+            height: 200px;
+            background: #c0c0c0;
+        }
+    </style>
+    <script>
+        function  abc(name,value)
+        {
+            var odiv=document.getElementById('div1');
+            odiv.style[name]=value;
+        }
+    </script>
+</head>
+<body>
+<input type="button" value="*"  onclick="abc('width','400px')"/>
+<input type="button" value="**"  onclick="abc('background','orange')"/>
+<div id ="div1"></div>
+</body>
+</html>
